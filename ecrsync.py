@@ -44,6 +44,7 @@ def run_command(command):
     else:
         print("Failed to run command " +
               "{0}".format(" ".join(command)))
+        print("Reason: " + err)
         exit(2)
         return err, False
 
